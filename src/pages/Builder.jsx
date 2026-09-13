@@ -229,7 +229,9 @@ export default function Builder() {
         </aside>
         <div className="flex justify-center bg-sand p-6 print-area">
           <div className="aspect-[1/1.414] w-full max-w-[720px] overflow-hidden bg-white shadow-hero">
-            <ResumePreview resume={resume} template={template} />
+            <div className="origin-top-left scale-[1.02]">
+              <ResumePreview resume={resume} template={template} />
+            </div>
           </div>
         </div>
       </div>

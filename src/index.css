@@ -16,22 +16,22 @@ body {
 
 .landing-section {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1360px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .landing-section {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .landing-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 }
 

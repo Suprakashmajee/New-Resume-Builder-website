@@ -1,8 +1,10 @@
 function Avatar() {
   return (
-    <div className="mx-auto mb-3 grid h-16 w-16 place-items-center overflow-hidden rounded-full bg-gradient-to-br from-amber-200 to-stone-400 text-lg font-bold text-ink">
-      BW
-    </div>
+    <img
+      alt=""
+      src="https://api.dicebear.com/9.x/adventurer/svg?seed=Brian"
+      className="mx-auto mb-3 h-16 w-16 rounded-full bg-white object-cover"
+    />
   );
 }
 

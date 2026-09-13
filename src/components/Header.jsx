@@ -20,14 +20,7 @@ export default function Header() {
         </Link>
         <nav className="mr-10 hidden justify-end gap-6 text-xl lg:flex">
           {links.map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              className={({ isActive }) =>
-                `p-3 hover:opacity-90 ${isActive ? "text-ink" : "text-gray-400"}`
-              }
-            >
+            <NavLink key={l.to} to={l.to} end={l.to === "/"} className="p-3 text-gray-400 hover:opacity-90">
               {l.label}
             </NavLink>
           ))}
