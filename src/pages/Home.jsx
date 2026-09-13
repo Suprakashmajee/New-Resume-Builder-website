@@ -61,13 +61,11 @@ export default function Home() {
           </Link>
           <div className="mt-10 flex flex-col">
             <div className="-ml-1 flex">
-              {["george", "sara", "mia", "leo", "jack"].map((seed, i) => (
-                <img
-                  key={seed}
-                  alt=""
-                  src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${seed}`}
-                  className="-ml-3 h-12 w-12 rounded-full border-2 border-sand bg-white"
-                  style={{ zIndex: 5 - i }}
+              {["#E8B298", "#C9A06A", "#8D6E63", "#6D8B8A", "#7A9BB8"].map((c, i) => (
+                <div
+                  key={c}
+                  className="-ml-3 h-12 w-12 overflow-hidden rounded-full border-2 border-sand"
+                  style={{ background: `radial-gradient(circle at 35% 30%, #fff6, transparent 40%), ${c}`, zIndex: 5 - i }}
                 />
               ))}
             </div>

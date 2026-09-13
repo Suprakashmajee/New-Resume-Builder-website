@@ -18,4 +18,11 @@ npm run build
 npm run preview
 ```
 
-SPA routes rewrite to `index.html` (see `vercel.json`).
+Production URL: [https://airesumedraft.com/](https://airesumedraft.com/)
+
+GitHub Actions publishes `dist/` to the `gh-pages` branch. Point the domain in Hostinger (hPanel → Domains → DNS):
+
+- **A** `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- **CNAME** `www` → `suprakashmajee.github.io`
+
+Or keep Hostinger LiteSpeed: upload the contents of `dist/` into `public_html` (`.htaccess` is included for SPA routes).
